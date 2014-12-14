@@ -1,14 +1,20 @@
-if (Posts.find().count() === 0) {
-  Posts.insert({
-    title: 'Introducing Telescope',
-    url: 'http://sachagreif.com/introducing-telescope/'
+if (Applications.find().count() === 0) {
+  Applications.insert({
+    clientId: '1231',
+    type: 'education',
+    amount: 200,
+    date: new Date()
   });
-  Posts.insert({
-    title: 'Meteor',
-    url: 'http://meteor.com'
+  Applications.insert({
+    clientId: '1234',
+    type: 'house',
+    amount: 1200,
+    date: new Date()
   });
-  Posts.insert({
-    title: 'The Meteor Book',
-    url: 'http://themeteorbook.com'
+  Applications.insert({
+    clientId: '1233',
+    type: 'house',
+    amount: 1200,
+    date: new Date()
   });
 }
