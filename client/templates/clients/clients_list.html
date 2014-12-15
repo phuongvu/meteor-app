@@ -1,7 +1,28 @@
 <template name="clientsList">
-    <div class="posts">
-      {{#each posts}}
-        {{> applicationItem}}
-      {{/each}}
+    <div class="well well-sm">
+        <a href="/clients/add-new-client" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-plus-sign"></span> New client</a>
+    </div>
+    <div class="well">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#if clients}}
+                    {{#each clients}}
+                        {{> clientItem}}
+                    {{/each}}
+                {{else}}
+                    <tr>There is no client to show!</tr>
+                {{/if}}
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
