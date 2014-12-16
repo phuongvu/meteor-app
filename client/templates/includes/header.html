@@ -12,9 +12,9 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav">
                 {{#if currentUser}}
-                <li class="{{activeRouteClass 'clientsList'}}"><a href="/clients">Clients</a></li>
-                <li class="{{activeRouteClass 'notificationsList'}}"><a href="/notifications">Notifications</a></li>
-                <li class="{{activeRouteClass 'campaignsList'}}"><a href="/campaigns">Campaigns</a></li>
+                    <li class="{{activeRouteClass 'clientsList' 'clientPage' 'newClient' 'newApplication'}}"><a href="/clients">Clients</a></li>
+                    <li class="{{activeRouteClass 'campaignsList'}}"><a href="/campaigns">Campaigns</a></li>
+                    <li class="{{activeRouteClass 'notificationsList'}}"><a href="/notifications">Notifications <span class="badge">42</span></a></li>
                 {{/if}}
             </ul>
             <ul class="nav navbar-nav navbar-right">

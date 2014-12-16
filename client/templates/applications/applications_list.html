@@ -1,3 +1,20 @@
 <template name="applicationsList">
-
+    <div class="table-responsive">
+        <table class="table table-hover table-condensed table-responsive">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each applications}}
+                {{> applicationItem}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
 </template>

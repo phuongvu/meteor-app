@@ -1,3 +1,24 @@
 <template name="newApplication">
-
+    <div class="well well-lg">
+        <form role="form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" name="title">
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" name="type">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" class="form-control" name="amount">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="textArea" class="form-control" name="description">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/clients/{{clientId}}" class="btn btn-default">Cancel</a>
+        </form>
+    </div>
 </template>

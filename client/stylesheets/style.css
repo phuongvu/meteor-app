@@ -7,6 +7,10 @@ body {
     font-family: 'PT Serif';
 }
 
+#main {
+    overflow: auto;
+}
+
 .navbar {
     margin-bottom: 10px;
     padding: 5px;
@@ -19,8 +23,7 @@ body {
     font-size: 1.2em;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+.nav > li > a:hover {
     text-decoration: none;
     border-color: #55AAAA;
 }
@@ -148,4 +151,15 @@ body {
 
 .about-text a {
     color: #000;
+}
+
+.table thead > tr > th { border-bottom: none; }
+
+.page-header {
+    margin: 0px 0 20px;
+}
+
+.right {
+    float: right;
+    margin-right: 20px;
 }

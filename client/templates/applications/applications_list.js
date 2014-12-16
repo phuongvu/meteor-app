@@ -1,5 +1,5 @@
 Template.applicationsList.helpers({
-    posts: function() {
+    applications: function() {
         return Applications.find();
     }
 });

@@ -1,7 +1,9 @@
 <template name="applicationItem">
-    <div class="post">
-        <div class="post-content">
-            <h3><a href="{{pathFor 'applicationPage'}}">{{title}}</a><span>{{domain}}</span></h3>
-        </div>
-    </div>
+    <tr class="{{_id}}">
+        <td>{{title}}</td>
+        <td>{{type}}</td>
+        <td>{{amount}}</td>
+        <td>{{status}}</td>
+        <td><a href={{pathFor 'applicationPage'}}>See more</a></td>
+    </tr>
 </template>
